@@ -1,0 +1,23 @@
+#container {
+  background-color: white;
+  height: 90vh;
+  width: 60vh;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  background-image: url(spacebackground.png);
+  background-repeat: none;
+  background-size: cover;
+}
+html {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#spaceship {
+  background-image: url(pixelspaceship);
+  background-size: cover;
+  background-repeat: none;
+  
+}
