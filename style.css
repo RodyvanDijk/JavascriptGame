@@ -3,10 +3,10 @@
   height: 90vh;
   width: 60vh;
   display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(30, 1fr);
+  grid-template-columns: repeat(41, 1fr);
+  grid-template-rows: repeat(60, 1fr);
   background-image: url(spacebackground.png);
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 html {
@@ -16,8 +16,11 @@ html {
   align-content: center;
 }
 #spaceship {
-  background-image: url(pixelspaceship);
+  background-image: url(pixelspaceship.png);
   background-size: cover;
-  background-repeat: none;
-  
+  background-repeat: no-repeat;
+  grid-row-start: 56;
+  grid-row-end: 60;
+  visibility: hidden;
+  display: none;
 }

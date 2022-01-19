@@ -1,5 +1,5 @@
-const GRID_SIZE_Y = 30;
-const GRID_SIZE_X = 20;
+const GRID_SIZE_Y = 60;
+const GRID_SIZE_X = 42;
 
 export function outsideGrid(position) {
   return (
