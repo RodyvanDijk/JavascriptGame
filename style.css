@@ -1,13 +1,14 @@
 #container {
   background-color: white;
   height: 90vh;
-  width: 60vh;
+  width: 56vh;
   display: grid;
-  grid-template-columns: repeat(41, 1fr);
-  grid-template-rows: repeat(60, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(15, 1fr);
   background-image: url(spacebackground.png);
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
 }
 html {
   background-color: black;
@@ -17,10 +18,38 @@ html {
 }
 #spaceship {
   background-image: url(pixelspaceship.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  grid-row-start: 56;
-  grid-row-end: 60;
+  background-position: center;
+  grid-row-start: 15;
+  grid-row-end: 15;
+  visibility: hidden;
+  display: none;
+  margin: 0;
+}
+#meteor {
+  background-image: url("meteor.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-row: 14;
+  grid-column: 1;
+  visibility: hidden;
+  display: none;
+}
+#alien1,
+#alien2,
+#alien3,
+#alien4,
+#alien5,
+#alien6,
+#alien7,
+#alien8 {
+  background-image: url(level1ship.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-row-start: 1;
   visibility: hidden;
   display: none;
 }
