@@ -1,4 +1,3 @@
-// import { outsideGrid } from "./playfield.js";
 import { moveRight, position } from "./spaceship.js";
 
 // function startGame() {
