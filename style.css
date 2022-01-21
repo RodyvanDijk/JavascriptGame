@@ -21,8 +21,7 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  grid-row-start: 15;
-  grid-row-end: 15;
+  grid-row: 14;
   visibility: hidden;
   display: none;
   margin: 0;
@@ -32,7 +31,7 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  grid-row: 14;
+  grid-row: 12;
   grid-column: 1;
   visibility: hidden;
   display: none;
@@ -49,7 +48,16 @@ html {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  grid-row-start: 1;
+  grid-row: 2;
   visibility: hidden;
   display: none;
+}
+#rocket {
+  background-image: url(rocket.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  visibility: hidden;
+  display: none;
+  grid-row: 14;
 }
