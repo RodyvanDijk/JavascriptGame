@@ -22,13 +22,13 @@ function alienposition() {
   document.getElementById("alien8").style.visibility = "visible";
   document.getElementById("alien8").style.display = "block";
   document.getElementById("alien1").style.gridArea = "2/1/auto/auto";
-  document.getElementById("alien2").style.gridColumn = "2/2";
-  document.getElementById("alien3").style.gridColumn = "3/3";
-  document.getElementById("alien4").style.gridColumn = "4/4";
-  document.getElementById("alien5").style.gridColumn = "5/5";
-  document.getElementById("alien6").style.gridColumn = "6/6";
-  document.getElementById("alien7").style.gridColumn = "7/7";
-  document.getElementById("alien8").style.gridColumn = "8/8";
+  document.getElementById("alien2").style.gridArea = "2/2/auto/auto";
+  document.getElementById("alien3").style.gridArea = "2/3/auto/auto";
+  document.getElementById("alien4").style.gridArea = "2/4/auto/auto";
+  document.getElementById("alien5").style.gridArea = "2/5/auto/auto";
+  document.getElementById("alien6").style.gridArea = "2/6/auto/auto";
+  document.getElementById("alien7").style.gridArea = "2/7/auto/auto";
+  document.getElementById("alien8").style.gridArea = "2/8/auto/auto";
 }
 
 function start() {

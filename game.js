@@ -12,38 +12,39 @@ function change_direction(event) {
 
   const keyPressed = event.keyCode;
   if (keyPressed === Digit1) {
-    document.getElementById("spaceship").style.gridColumn = "1/1";
-    document.getElementById("rocket").style.gridColumn = "1/1";
+    document.getElementById("spaceship").style.gridColumn = "1";
+    document.getElementById("rocket").style.gridColumn = "1";
   }
   if (keyPressed === Digit2) {
-    document.getElementById("spaceship").style.gridColumn = "2/2";
-    document.getElementById("rocket").style.gridColumn = "2/2";
+    document.getElementById("spaceship").style.gridColumn = "2";
+    document.getElementById("rocket").style.gridColumn = "2";
   }
   if (keyPressed === Digit3) {
-    document.getElementById("spaceship").style.gridColumn = "3/3";
-    document.getElementById("rocket").style.gridColumn = "3/3";
+    document.getElementById("spaceship").style.gridColumn = "3";
+    document.getElementById("rocket").style.gridColumn = "3";
   }
   if (keyPressed === Digit4) {
-    document.getElementById("spaceship").style.gridColumn = "4/4";
-    document.getElementById("rocket").style.gridColumn = "4/4";
+    document.getElementById("spaceship").style.gridColumn = "4";
+    document.getElementById("rocket").style.gridColumn = "4";
   }
   if (keyPressed === Digit5) {
-    document.getElementById("spaceship").style.gridColumn = "5/5";
-    document.getElementById("rocket").style.gridColumn = "5/5";
+    document.getElementById("spaceship").style.gridColumn = "5";
+    document.getElementById("rocket").style.gridColumn = "5";
   }
   if (keyPressed === Digit6) {
-    document.getElementById("spaceship").style.gridColumn = "6/6";
-    document.getElementById("rocket").style.gridColumn = "6/6";
+    document.getElementById("spaceship").style.gridColumn = "6";
+    document.getElementById("rocket").style.gridColumn = "6";
   }
   if (keyPressed === Digit7) {
-    document.getElementById("spaceship").style.gridColumn = "7/7";
-    document.getElementById("rocket").style.gridColumn = "7/7";
+    document.getElementById("spaceship").style.gridColumn = "7";
+    document.getElementById("rocket").style.gridColumn = "7";
   }
   if (keyPressed === Digit8) {
-    document.getElementById("spaceship").style.gridColumn = "8/8";
-    document.getElementById("rocket").style.gridColumn = "8/8";
+    document.getElementById("spaceship").style.gridColumn = "8";
+    document.getElementById("rocket").style.gridColumn = "8";
   }
   if (keyPressed === KeyE) {
+    document.getElementById("rocket").style.gridRow = "14";
     document.getElementById("rocket").style.visibility = "visible";
     document.getElementById("rocket").style.display = "block";
     up();
@@ -58,48 +59,98 @@ function up() {
         document.getElementById("rocket").style.gridArea ===
         document.getElementById("alien1").style.gridArea
       ) {
-;
         document.getElementById("rocket").style.visibility = "hidden";
         document.getElementById("rocket").style.display = "none";
         document.getElementById("alien1").style.visibility = "hidden";
         document.getElementById("alien1").style.display = "none";
       } else if (
-        document.getElementById("rocket").style.gridArea !==
-        document.getElementById("alien1").style.gridArea
+        document.getElementById("rocket").style.gridArea ===
+        document.getElementById("alien2").style.gridArea
       ) {
-        alert("bad");
+        document.getElementById("rocket").style.visibility = "hidden";
+        document.getElementById("rocket").style.display = "none";
+        document.getElementById("alien2").style.visibility = "hidden";
+        document.getElementById("alien2").style.display = "none";
+      } else if (
+        document.getElementById("rocket").style.gridArea ===
+        document.getElementById("alien3").style.gridArea
+      ) {
+        document.getElementById("rocket").style.visibility = "hidden";
+        document.getElementById("rocket").style.display = "none";
+        document.getElementById("alien3").style.visibility = "hidden";
+        document.getElementById("alien3").style.display = "none";
+      } else if (
+        document.getElementById("rocket").style.gridArea ===
+        document.getElementById("alien4").style.gridArea
+      ) {
+        document.getElementById("rocket").style.visibility = "hidden";
+        document.getElementById("rocket").style.display = "none";
+        document.getElementById("alien4").style.visibility = "hidden";
+        document.getElementById("alien4").style.display = "none";
+      } else if (
+        document.getElementById("rocket").style.gridArea ===
+        document.getElementById("alien5").style.gridArea
+      ) {
+        document.getElementById("rocket").style.visibility = "hidden";
+        document.getElementById("rocket").style.display = "none";
+        document.getElementById("alien5").style.visibility = "hidden";
+        document.getElementById("alien5").style.display = "none";
+      } else if (
+        document.getElementById("rocket").style.gridArea ===
+        document.getElementById("alien6").style.gridArea
+      ) {
+        document.getElementById("rocket").style.visibility = "hidden";
+        document.getElementById("rocket").style.display = "none";
+        document.getElementById("alien6").style.visibility = "hidden";
+        document.getElementById("alien6").style.display = "none";
+      } else if (
+        document.getElementById("rocket").style.gridArea ===
+        document.getElementById("alien7").style.gridArea
+      ) {
+        document.getElementById("rocket").style.visibility = "hidden";
+        document.getElementById("rocket").style.display = "none";
+        document.getElementById("alien7").style.visibility = "hidden";
+        document.getElementById("alien7").style.display = "none";
+      } else if (
+        document.getElementById("rocket").style.gridArea ===
+        document.getElementById("alien8").style.gridArea
+      ) {
+        document.getElementById("rocket").style.visibility = "hidden";
+        document.getElementById("rocket").style.display = "none";
+        document.getElementById("alien8").style.visibility = "hidden";
+        document.getElementById("alien8").style.display = "none";
       }
     }
     document.getElementById("rocket").style.gridRow = i;
     i--;
-  }, 250);
+  }, 175);
 }
-function loop1() {
-  var i = "visible";
-  var intervalId = setInterval(function () {
-    if (
-      document.getElementById("rocket").style.gridArea ===
-        document.getElementById("alien1").style.gridArea &&
-      document.getElementById("rocket").style.gridRow === 2
-    ) {
-      document.getElementById("rocket").style.visibility = "hidden";
-      document.getElementById("rocket").style.display = "none";
-      document.getElementById("alien1").style.visibility = "hidden";
-      document.getElementById("alien1").style.display = "none";
-      alert("good");
-      clearInterval(intervalId);
-    } else if (
-      document.getElementById("rocket").style.gridArea !==
-        document.getElementById("alien1").style.gridArea &&
-      document.getElementById("rocket").style.gridRow === 2
-    ) {
-      document.getElementById("rocket").style.visibility = "hidden";
-      document.getElementById("rocket").style.display = "none";
-      alert("bad");
-      clearInterval(intervalId);
-    }
-  }, 100);
-}
+// function loop1() {
+//   var i = "visible";
+//   var intervalId = setInterval(function () {
+//     if (
+//       document.getElementById("rocket").style.gridArea ===
+//         document.getElementById("alien1").style.gridArea &&
+//       document.getElementById("rocket").style.gridRow === 2
+//     ) {
+//       document.getElementById("rocket").style.visibility = "hidden";
+//       document.getElementById("rocket").style.display = "none";
+//       document.getElementById("alien1").style.visibility = "hidden";
+//       document.getElementById("alien1").style.display = "none";
+//       alert("good");
+//       clearInterval(intervalId);
+//     } else if (
+//       document.getElementById("rocket").style.gridArea !==
+//         document.getElementById("alien1").style.gridArea &&
+//       document.getElementById("rocket").style.gridRow === 2
+//     ) {
+//       document.getElementById("rocket").style.visibility = "hidden";
+//       document.getElementById("rocket").style.display = "none";
+//       alert("bad");
+//       clearInterval(intervalId);
+//     }
+//   }, 100);
+// }
 
 // function loop1() {
 //   do {
