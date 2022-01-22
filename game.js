@@ -336,6 +336,7 @@ function up() {
     i--;
   }, 175);
 }
+
 // function loop1() {
 //   var i = "visible";
 //   var intervalId = setInterval(function () {

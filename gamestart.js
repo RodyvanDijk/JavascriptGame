@@ -37,6 +37,7 @@ function start() {
   position();
   alienposition();
   fire();
+  alienattack();
   // meteor();
   // meteorspeed();
 }
@@ -47,3 +48,22 @@ function fire() {
 //   document.getElementById("meteor").style.visibility = "visible";
 //   document.getElementById("meteor").style.display = "block";
 // }
+function alienattack() {
+  var i = 2;
+  var intervalId = setInterval(function () {
+    if (i === 14) {
+      clearInterval(intervalId);
+      alert("Game Over, you lost!");
+      location.reload();
+    }
+    document.getElementById("alien1").style.gridRow = i;
+    document.getElementById("alien2").style.gridRow = i;
+    document.getElementById("alien3").style.gridRow = i;
+    document.getElementById("alien4").style.gridRow = i;
+    document.getElementById("alien5").style.gridRow = i;
+    document.getElementById("alien6").style.gridRow = i;
+    document.getElementById("alien7").style.gridRow = i;
+    document.getElementById("alien8").style.gridRow = i;
+    i++;
+  }, 5000);
+}
