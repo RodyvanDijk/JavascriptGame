@@ -38,6 +38,7 @@ function start() {
   alienposition();
   fire();
   alienattack();
+  setInterval(checkaliendamage, 10);
   // meteor();
   // meteorspeed();
 }
@@ -66,4 +67,219 @@ function alienattack() {
     document.getElementById("alien8").style.gridRow = i;
     i++;
   }, 5000);
+}
+function load() {
+  document.getElementById("fire").style.color = "white";
+}
+
+function checkaliendamage() {
+  if (
+    document.getElementById("rocket").style.gridArea ===
+    document.getElementById("alien1").style.gridArea
+  ) {
+    document.getElementById("rocket").style.visibility = "hidden";
+    document.getElementById("rocket").style.display = "none";
+    document.getElementById("alien1").style.visibility = "hidden";
+    document.getElementById("alien1").style.display = "none";
+    document.getElementById("rocket").style.gridArea = "14/auto/auto/auto";
+    document.getElementById("rocket").style.gridArea =
+      document.getElementById("spaceship").style.gridArea;
+    document.getElementById("fire").style.color = "red";
+    if (
+      document.getElementById("alien1").style.visibility === "hidden" &&
+      document.getElementById("alien2").style.visibility === "hidden" &&
+      document.getElementById("alien3").style.visibility === "hidden" &&
+      document.getElementById("alien4").style.visibility === "hidden" &&
+      document.getElementById("alien5").style.visibility === "hidden" &&
+      document.getElementById("alien6").style.visibility === "hidden" &&
+      document.getElementById("alien7").style.visibility === "hidden" &&
+      document.getElementById("alien8").style.visibility === "hidden"
+    ) {
+      alert("YOU WON!");
+      document.getElementById("fire").style.color = "white";
+      location.reload();
+    }
+  } else if (
+    document.getElementById("rocket").style.gridArea ===
+    document.getElementById("alien2").style.gridArea
+  ) {
+    document.getElementById("rocket").style.visibility = "hidden";
+    document.getElementById("rocket").style.display = "none";
+    document.getElementById("alien2").style.visibility = "hidden";
+    document.getElementById("alien2").style.display = "none";
+    document.getElementById("rocket").style.gridArea = "14";
+    document.getElementById("rocket").style.gridArea =
+      document.getElementById("spaceship").style.gridArea;
+    document.getElementById("fire").style.color = "red";
+    if (
+      document.getElementById("alien1").style.visibility === "hidden" &&
+      document.getElementById("alien2").style.visibility === "hidden" &&
+      document.getElementById("alien3").style.visibility === "hidden" &&
+      document.getElementById("alien4").style.visibility === "hidden" &&
+      document.getElementById("alien5").style.visibility === "hidden" &&
+      document.getElementById("alien6").style.visibility === "hidden" &&
+      document.getElementById("alien7").style.visibility === "hidden" &&
+      document.getElementById("alien8").style.visibility === "hidden"
+    ) {
+      alert("YOU WON!");
+      document.getElementById("fire").style.color = "white";
+      location.reload();
+    }
+  } else if (
+    document.getElementById("rocket").style.gridArea ===
+    document.getElementById("alien3").style.gridArea
+  ) {
+    document.getElementById("rocket").style.visibility = "hidden";
+    document.getElementById("rocket").style.display = "none";
+    document.getElementById("alien3").style.visibility = "hidden";
+    document.getElementById("alien3").style.display = "none";
+    document.getElementById("rocket").style.gridArea = "14";
+    document.getElementById("rocket").style.gridArea =
+      document.getElementById("spaceship").style.gridArea;
+    document.getElementById("fire").style.color = "red";
+    if (
+      document.getElementById("alien1").style.visibility === "hidden" &&
+      document.getElementById("alien2").style.visibility === "hidden" &&
+      document.getElementById("alien3").style.visibility === "hidden" &&
+      document.getElementById("alien4").style.visibility === "hidden" &&
+      document.getElementById("alien5").style.visibility === "hidden" &&
+      document.getElementById("alien6").style.visibility === "hidden" &&
+      document.getElementById("alien7").style.visibility === "hidden" &&
+      document.getElementById("alien8").style.visibility === "hidden"
+    ) {
+      alert("YOU WON!");
+      document.getElementById("fire").style.color = "white";
+      location.reload();
+    }
+  } else if (
+    document.getElementById("rocket").style.gridArea ===
+    document.getElementById("alien4").style.gridArea
+  ) {
+    document.getElementById("rocket").style.visibility = "hidden";
+    document.getElementById("rocket").style.display = "none";
+    document.getElementById("alien4").style.visibility = "hidden";
+    document.getElementById("alien4").style.display = "none";
+    document.getElementById("rocket").style.gridArea = "14";
+    document.getElementById("rocket").style.gridArea =
+      document.getElementById("spaceship").style.gridArea;
+    document.getElementById("fire").style.color = "red";
+    if (
+      document.getElementById("alien1").style.visibility === "hidden" &&
+      document.getElementById("alien2").style.visibility === "hidden" &&
+      document.getElementById("alien3").style.visibility === "hidden" &&
+      document.getElementById("alien4").style.visibility === "hidden" &&
+      document.getElementById("alien5").style.visibility === "hidden" &&
+      document.getElementById("alien6").style.visibility === "hidden" &&
+      document.getElementById("alien7").style.visibility === "hidden" &&
+      document.getElementById("alien8").style.visibility === "hidden"
+    ) {
+      alert("YOU WON!");
+      document.getElementById("fire").style.color = "white";
+      location.reload();
+    }
+  } else if (
+    document.getElementById("rocket").style.gridArea ===
+    document.getElementById("alien5").style.gridArea
+  ) {
+    document.getElementById("rocket").style.visibility = "hidden";
+    document.getElementById("rocket").style.display = "none";
+    document.getElementById("alien5").style.visibility = "hidden";
+    document.getElementById("alien5").style.display = "none";
+    document.getElementById("rocket").style.gridArea = "14";
+    document.getElementById("rocket").style.gridArea =
+      document.getElementById("spaceship").style.gridArea;
+    document.getElementById("fire").style.color = "red";
+    if (
+      document.getElementById("alien1").style.visibility === "hidden" &&
+      document.getElementById("alien2").style.visibility === "hidden" &&
+      document.getElementById("alien3").style.visibility === "hidden" &&
+      document.getElementById("alien4").style.visibility === "hidden" &&
+      document.getElementById("alien5").style.visibility === "hidden" &&
+      document.getElementById("alien6").style.visibility === "hidden" &&
+      document.getElementById("alien7").style.visibility === "hidden" &&
+      document.getElementById("alien8").style.visibility === "hidden"
+    ) {
+      alert("YOU WON!");
+      document.getElementById("fire").style.color = "white";
+      location.reload();
+    }
+  } else if (
+    document.getElementById("rocket").style.gridArea ===
+    document.getElementById("alien6").style.gridArea
+  ) {
+    document.getElementById("rocket").style.visibility = "hidden";
+    document.getElementById("rocket").style.display = "none";
+    document.getElementById("alien6").style.visibility = "hidden";
+    document.getElementById("alien6").style.display = "none";
+    document.getElementById("rocket").style.gridArea = "14";
+    document.getElementById("rocket").style.gridArea =
+      document.getElementById("spaceship").style.gridArea;
+    document.getElementById("fire").style.color = "red";
+    if (
+      document.getElementById("alien1").style.visibility === "hidden" &&
+      document.getElementById("alien2").style.visibility === "hidden" &&
+      document.getElementById("alien3").style.visibility === "hidden" &&
+      document.getElementById("alien4").style.visibility === "hidden" &&
+      document.getElementById("alien5").style.visibility === "hidden" &&
+      document.getElementById("alien6").style.visibility === "hidden" &&
+      document.getElementById("alien7").style.visibility === "hidden" &&
+      document.getElementById("alien8").style.visibility === "hidden"
+    ) {
+      alert("YOU WON!");
+      document.getElementById("fire").style.color = "white";
+      location.reload();
+    }
+  } else if (
+    document.getElementById("rocket").style.gridArea ===
+    document.getElementById("alien7").style.gridArea
+  ) {
+    document.getElementById("rocket").style.visibility = "hidden";
+    document.getElementById("rocket").style.display = "none";
+    document.getElementById("alien7").style.visibility = "hidden";
+    document.getElementById("alien7").style.display = "none";
+    document.getElementById("rocket").style.gridArea = "14";
+    document.getElementById("rocket").style.gridArea =
+      document.getElementById("spaceship").style.gridArea;
+    document.getElementById("fire").style.color = "red";
+    if (
+      document.getElementById("alien1").style.visibility === "hidden" &&
+      document.getElementById("alien2").style.visibility === "hidden" &&
+      document.getElementById("alien3").style.visibility === "hidden" &&
+      document.getElementById("alien4").style.visibility === "hidden" &&
+      document.getElementById("alien5").style.visibility === "hidden" &&
+      document.getElementById("alien6").style.visibility === "hidden" &&
+      document.getElementById("alien7").style.visibility === "hidden" &&
+      document.getElementById("alien8").style.visibility === "hidden"
+    ) {
+      alert("YOU WON!");
+      document.getElementById("fire").style.color = "white";
+      location.reload();
+    }
+  } else if (
+    document.getElementById("rocket").style.gridArea ===
+    document.getElementById("alien8").style.gridArea
+  ) {
+    document.getElementById("rocket").style.visibility = "hidden";
+    document.getElementById("rocket").style.display = "none";
+    document.getElementById("alien8").style.visibility = "hidden";
+    document.getElementById("alien8").style.display = "none";
+    document.getElementById("rocket").style.gridArea = "14";
+    document.getElementById("rocket").style.gridArea =
+      document.getElementById("spaceship").style.gridArea;
+    document.getElementById("fire").style.color = "red";
+    if (
+      document.getElementById("alien1").style.visibility === "hidden" &&
+      document.getElementById("alien2").style.visibility === "hidden" &&
+      document.getElementById("alien3").style.visibility === "hidden" &&
+      document.getElementById("alien4").style.visibility === "hidden" &&
+      document.getElementById("alien5").style.visibility === "hidden" &&
+      document.getElementById("alien6").style.visibility === "hidden" &&
+      document.getElementById("alien7").style.visibility === "hidden" &&
+      document.getElementById("alien8").style.visibility === "hidden"
+    ) {
+      alert("YOU WON!");
+      document.getElementById("fire").style.color = "white";
+      location.reload();
+    }
+  }
 }
