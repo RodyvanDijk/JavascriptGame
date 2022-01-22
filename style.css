@@ -52,6 +52,22 @@ html {
   visibility: hidden;
   display: none;
 }
+#secondalien1,
+#secondalien2,
+#secondalien3,
+#secondalien4,
+#secondalien5,
+#secondalien6,
+#secondalien7,
+#secondalien8 {
+  background-image: url(level2ship.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-row: 3;
+  visibility: hidden;
+  display: none;
+}
 #rocket {
   background-image: url(rocket.png);
   background-size: contain;
