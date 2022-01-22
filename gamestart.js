@@ -1,8 +1,8 @@
 function position() {
   document.getElementById("spaceship").style.visibility = "visible";
   document.getElementById("spaceship").style.display = "block";
-  document.getElementById("spaceship").style.gridColumn = "1";
-  document.getElementById("rocket").style.gridColumn = "1";
+  document.getElementById("spaceship").style.gridArea = "14/1/auto/auto";
+  document.getElementById("rocket").style.gridArea = "14/1/auto/auto";
 }
 function alienposition() {
   document.getElementById("alien1").style.visibility = "visible";
@@ -36,10 +36,14 @@ function start() {
 
   position();
   alienposition();
-  meteor();
+  fire();
+  // meteor();
   // meteorspeed();
 }
-function meteor() {
-  document.getElementById("meteor").style.visibility = "visible";
-  document.getElementById("meteor").style.display = "block";
+function fire() {
+  document.getElementById("fire").style.color = "red";
 }
+// function meteor() {
+//   document.getElementById("meteor").style.visibility = "visible";
+//   document.getElementById("meteor").style.display = "block";
+// }

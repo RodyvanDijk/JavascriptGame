@@ -26,7 +26,7 @@ html {
   display: none;
   margin: 0;
 }
-#meteor {
+/* #meteor {
   background-image: url("meteor.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@ html {
   grid-column: 1;
   visibility: hidden;
   display: none;
-}
+} */
 #alien1,
 #alien2,
 #alien3,
@@ -60,4 +60,13 @@ html {
   visibility: hidden;
   display: none;
   grid-row: 14;
+}
+#fire {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  float: right;
+}
+#button1 {
+  float: left;
 }
