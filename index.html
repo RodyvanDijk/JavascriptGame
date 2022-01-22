@@ -10,7 +10,39 @@
   <body onload="load()">
     <div id="info"></div>
     <button id="button1" onclick="start()">Click!</button>
-    <p id="fire">E to fire</p>
+    <aside>
+      <li><p id="fire">E to fire</p></li>
+      <li><p id="currentlevel">Current level color</p></li>
+      <li>
+        <button onclick="level1()" class="levelbutton" id="level1button">
+          Level 1
+        </button>
+      </li>
+      <br />
+      <li>
+        <button onclick="level2()" class="levelbutton" id="level2button">
+          Level 2
+        </button>
+      </li>
+      <br />
+      <li>
+        <button onclick="level3()" class="levelbutton" id="level3button">
+          Level 3
+        </button>
+      </li>
+      <br />
+      <li>
+        <button onclick="level4()" class="levelbutton" id="level4button">
+          Level 4
+        </button>
+      </li>
+      <br />
+      <li>
+        <button onclick="level5()" class="levelbutton" id="level5button">
+          Level 5
+        </button>
+      </li>
+    </aside>
     <div id="container">
       <div id="alien1" class="alien"></div>
       <div id="alien2" class="alien"></div>

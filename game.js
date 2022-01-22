@@ -130,6 +130,10 @@ function up() {
   var intervalId = setInterval(function () {
     if (i === 1) {
       clearInterval(intervalId);
+    } else if (
+      document.getElementById("rocket").style.visibility === "hidden"
+    ) {
+      clearInterval(intervalId);
     }
     document.getElementById("rocket").style.gridRow = i;
     i--;

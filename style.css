@@ -65,8 +65,37 @@ html {
   font-size: large;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  float: right;
 }
 #button1 {
   float: left;
+}
+.levelbutton {
+  color: black;
+  font-size: large;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+aside {
+  float: right;
+}
+#currentlevel {
+  color: black;
+  background-color: green;
+  font-size: large;
+  font-weight: 700;
+}
+#level1button {
+  background-color: green;
+}
+#level2button {
+  background-color: blue;
+}
+#level3button {
+  background-color: yellow;
+}
+#level4button {
+  background-color: orange;
+}
+#level5button {
+  background-color: red;
 }
