@@ -243,7 +243,7 @@ function alienattack4half1() {
     document.getElementById("alien7").style.gridRow = i;
     document.getElementById("alien8").style.gridRow = i;
     i++;
-  }, 5000);
+  }, 6000);
 }
 function alienattack4half2() {
   var i = 3;
@@ -262,13 +262,54 @@ function alienattack4half2() {
     document.getElementById("secondalien7").style.gridRow = i;
     document.getElementById("secondalien8").style.gridRow = i;
     i++;
-  }, 5000);
+  }, 6000);
 }
 function alienattack4() {
   alienattack4half1();
   alienattack4half2();
 }
-
+function alienattack5half1() {
+  var i = 2;
+  var intervalId = setInterval(function () {
+    if (i === 14) {
+      clearInterval(intervalId);
+      alert("Game Over, you lost!");
+      location.reload();
+    }
+    document.getElementById("alien1").style.gridRow = i;
+    document.getElementById("alien2").style.gridRow = i;
+    document.getElementById("alien3").style.gridRow = i;
+    document.getElementById("alien4").style.gridRow = i;
+    document.getElementById("alien5").style.gridRow = i;
+    document.getElementById("alien6").style.gridRow = i;
+    document.getElementById("alien7").style.gridRow = i;
+    document.getElementById("alien8").style.gridRow = i;
+    i++;
+  }, 4500);
+}
+function alienattack5half2() {
+  var i = 3;
+  var intervalId = setInterval(function () {
+    if (i === 15) {
+      clearInterval(intervalId);
+      alert("Game Over, you lost!");
+      location.reload();
+    }
+    document.getElementById("secondalien1").style.gridRow = i;
+    document.getElementById("secondalien2").style.gridRow = i;
+    document.getElementById("secondalien3").style.gridRow = i;
+    document.getElementById("secondalien4").style.gridRow = i;
+    document.getElementById("secondalien5").style.gridRow = i;
+    document.getElementById("secondalien6").style.gridRow = i;
+    document.getElementById("secondalien7").style.gridRow = i;
+    document.getElementById("secondalien8").style.gridRow = i;
+    i++;
+  }, 4500);
+}
+function alienattack5() {
+  alienattack5half1();
+  alienattack5half2();
+}
 function checkaliendamage() {
   if (
     document.getElementById("rocket").style.gridArea ===
