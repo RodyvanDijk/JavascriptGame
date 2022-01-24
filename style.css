@@ -26,16 +26,7 @@ html {
   display: none;
   margin: 0;
 }
-/* #meteor {
-  background-image: url("meteor.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  grid-row: 12;
-  grid-column: 1;
-  visibility: hidden;
-  display: none;
-} */
+
 #alien1,
 #alien2,
 #alien3,

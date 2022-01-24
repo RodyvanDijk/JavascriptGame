@@ -1,9 +1,11 @@
+// Hiermee wordt de raket geplaatst op de goeie plek en visible gemaakt.
 function position() {
   document.getElementById("spaceship").style.visibility = "visible";
   document.getElementById("spaceship").style.display = "block";
   document.getElementById("spaceship").style.gridArea = "14/1/auto/auto";
   document.getElementById("rocket").style.gridArea = "14/1/auto/auto";
 }
+// Hiermee worden de aliens van level 1, 2 en 3 geplaatst op de goeie plek en visible gemaakt.
 function alienposition1() {
   document.getElementById("alien1").style.visibility = "visible";
   document.getElementById("alien1").style.display = "block";
@@ -30,6 +32,7 @@ function alienposition1() {
   document.getElementById("alien7").style.gridArea = "2/7/auto/auto";
   document.getElementById("alien8").style.gridArea = "2/8/auto/auto";
 }
+// Hiermee worden de aliens van level 4 en 5 op de goeie plek geplaatst en visible gemaakt
 function alienposition2() {
   document.getElementById("alien1").style.visibility = "visible";
   document.getElementById("alien1").style.display = "block";
@@ -80,6 +83,7 @@ function alienposition2() {
   document.getElementById("secondalien7").style.gridArea = "3/7/auto/auto";
   document.getElementById("secondalien8").style.gridArea = "3/8/auto/auto";
 }
+// Deze functie geeft aan welke levels welke posities gebruiken.
 function alienposition() {
   if (
     document.getElementById("currentlevel").style.backgroundColor === "green"
@@ -103,6 +107,7 @@ function alienposition() {
     alienposition2();
   }
 }
+// Dit zorgt dat als de game gestart wordt dat alle functies gedaan worden.
 function start() {
   alert("Game started, goodluck!");
 
@@ -111,11 +116,8 @@ function start() {
   fire();
   alienspeed();
   checkdamage();
-  // meteor();
-  // meteorspeed();
 }
-// checkaliendamage();
-// checkaliendamage2();
+// Deze functie zorgt ervoor dat elk level de goeie damage/hitboxes gebruikt.
 function checkdamage() {
   if (
     document.getElementById("currentlevel").style.backgroundColor === "green"
@@ -139,13 +141,11 @@ function checkdamage() {
     setInterval(checkaliendamage2, 10);
   }
 }
+// Deze functie zorgt ervoor dat de button rood wordt wat ervoor zorgt dat er geschoten kan worden.
 function fire() {
   document.getElementById("fire").style.color = "red";
 }
-// function meteor() {
-//   document.getElementById("meteor").style.visibility = "visible";
-//   document.getElementById("meteor").style.display = "block";
-// }
+// Deze functie geeft aan welk level, welke snelheid voor de aliens moet gebruiken.
 function alienspeed() {
   if (
     document.getElementById("currentlevel").style.backgroundColor === "green"
@@ -169,6 +169,7 @@ function alienspeed() {
     alienattack5();
   }
 }
+// Dit is de eerst snelheid voor de aliens van level 1.
 function alienattack1() {
   var i = 2;
   var intervalId = setInterval(function () {
@@ -188,6 +189,7 @@ function alienattack1() {
     i++;
   }, 5000);
 }
+// Dit is de snelheid voor de aliens van level 2.
 function alienattack2() {
   var i = 2;
   var intervalId = setInterval(function () {
@@ -207,6 +209,7 @@ function alienattack2() {
     i++;
   }, 3000);
 }
+// Dit is de snelheid voor de aliens van level 3.
 function alienattack3() {
   var i = 2;
   var intervalId = setInterval(function () {
@@ -226,6 +229,7 @@ function alienattack3() {
     i++;
   }, 1500);
 }
+// Dit is de snelheid voor de aliens van level 4 de eerste rij.
 function alienattack4half1() {
   var i = 2;
   var intervalId = setInterval(function () {
@@ -245,6 +249,7 @@ function alienattack4half1() {
     i++;
   }, 6000);
 }
+// Dit is de snelheid voor de aliens van level 4 de tweede rij.
 function alienattack4half2() {
   var i = 3;
   var intervalId = setInterval(function () {
@@ -264,10 +269,12 @@ function alienattack4half2() {
     i++;
   }, 6000);
 }
+// Deze voegt de rijen van level 4 samen in 1 functie.
 function alienattack4() {
   alienattack4half1();
   alienattack4half2();
 }
+// Dit is de snelheid voor de aliens van level 5 de eerste rij.
 function alienattack5half1() {
   var i = 2;
   var intervalId = setInterval(function () {
@@ -287,6 +294,7 @@ function alienattack5half1() {
     i++;
   }, 4500);
 }
+// Dit is de snelheid voor de aliens van level 5 de tweede rij.
 function alienattack5half2() {
   var i = 3;
   var intervalId = setInterval(function () {
@@ -306,10 +314,12 @@ function alienattack5half2() {
     i++;
   }, 4500);
 }
+// Deze functie voegt de rijen van level 5 samen in 1 functie.
 function alienattack5() {
   alienattack5half1();
   alienattack5half2();
 }
+// Deze functie checked of er contact/collisions zijn tussen de raket en aliens voor level 1, 2 en 3.
 function checkaliendamage() {
   if (
     document.getElementById("rocket").style.gridArea ===
@@ -521,6 +531,7 @@ function checkaliendamage() {
     }
   }
 }
+// Deze functie checked of er contact/collisions zijn tussen de raket en aliens voor level 4 en 5.
 function checkaliendamage2() {
   if (
     document.getElementById("rocket").style.gridArea ===
@@ -1164,10 +1175,12 @@ function checkaliendamage2() {
     }
   }
 }
+// Deze functie zorgt er voor dat aan het begin van de pagina laden dat de fire button wit is en de "currentlevel" background color groen is.
 function load() {
   document.getElementById("fire").style.color = "white";
   document.getElementById("currentlevel").style.backgroundColor = "green";
 }
+// Deze functies veranderen de achtergrond kleur van de "current level".
 function level1() {
   document.getElementById("currentlevel").style.backgroundColor = "green";
 }
